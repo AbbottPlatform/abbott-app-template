@@ -1,0 +1,75 @@
+# This is a configuration file for the kickoff utility
+description: |
+  This is a Abbott App project for node.js based, cli applications.
+
+welcome: >
+  You are generating a Default Abbott App project, which is 
+  using node.js, and running as a command-line application.
+
+postscript: >
+  Next steps:
+  - Install the npm modules required by the newly generated application:
+    npm install
+
+questions:
+  # A question object is a hash containing question related values:
+  - 
+    # type: (String)
+    # Type of the prompt.
+    # Defaults: input - Possible values: input, confirm, list
+    type: input
+
+    # name: (String)
+    # The name to use when storing the answer in the answers' hash.
+    name: appname
+
+    # message: (String)
+    # The question to print.
+    message: The name of the application
+
+    # default: (String|Number|Array)
+    # Default value(s) to use if nothing is entered.
+    default: my-abbott-app
+
+  -
+    type: input
+    name: app_description
+    message: The short description of the application
+    default: My BOT App
+
+  -
+    type: input
+    name: bot_friendly_name
+    message: A frieldly name for your BOT to be used on the app
+    default: My BOT
+
+  -
+    type: input
+    name: author_full_name
+    message: The full name of the author of the application
+    default: Anonymous
+
+  -
+    type: input
+    name: author_email
+    message: The email address of the author
+    default: anonymous@some-domain.com
+
+  -
+    type: input
+    name: bitbucket_user
+    message: Your bitbucket user (used to instal the abbott-app npm dependency)
+    default: anonymous
+
+  -
+    type: input
+    name: bitbucket_token
+    message: Your bitbucket user token (used to instal the abbott-app npm dependency)
+    default: anonymous
+
+converters:
+  mustache:
+    - .env-dev-local
+    - app.yaml
+    - deployGAE.sh
+    - package.json

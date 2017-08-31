@@ -1,0 +1,1 @@
+The file "intent_handler_sample.js" is just a sample to be a guide to start to implement your first Custom Intent Flow Handler, you can delete this file any time you want.

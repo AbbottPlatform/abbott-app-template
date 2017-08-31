@@ -1,0 +1,25 @@
+runtime: nodejs
+env: flex
+service: {{appname}}
+
+manual_scaling:
+  instances: 1
+
+env_variables:
+  appName: '{{appname}}'
+  botFriendlyName: '{{bot_friendly_name}}'
+  # Put you config environment variables here
+
+skip_files:
+- ^(.*/)?#.*#$
+- ^(.*/)?.*~$
+- ^(.*/)?\..*$
+- ^(.*/)?\.bak$
+- \.tmp/.*
+- \.data/.*
+- \.vscode/.*
+- ^k8s/.*
+- ^Dockerfile$
+- ^docker[-].*$
+- ^.*\.sh$
+- ^apiai_bkp/.*

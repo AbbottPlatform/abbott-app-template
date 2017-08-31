@@ -1,0 +1,25 @@
+{
+  "name": "{{appname}}",
+  "version": "1.0.0",
+  "description": "{{app_description}}",
+  "main": "app.js",
+  "engines": {
+    "node": "7.10.0"
+  },
+  "scripts": {
+    "start-debug": "envFile=.env-dev-local node app.js",    
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": {
+    "name": "{{author_full_name}}",
+    "email": "{{author_email}}"
+  },
+  "license": "ISC",
+  "keywords": [
+    "bots",
+    "chatbots"
+  ],
+  "dependencies": {
+    "abbott-app": "git+https://{{bitbucket_user}}:{{bitbucket_token}}@bitbucket.org/viniciuspatrinhani/abbott-app.git#v1.5.5"
+  }
+}
