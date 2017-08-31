@@ -67,6 +67,12 @@ questions:
     message: Your bitbucket user token (used to instal the abbott-app npm dependency)
     default: anonymous
 
+  -
+    type: input
+    name: google_cloud_projectId
+    message: Your Google Cloud Project Id
+    default: my-gcloud-project
+
 converters:
   mustache:
     - .env-dev-local

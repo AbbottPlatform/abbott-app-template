@@ -9,7 +9,7 @@ $ npm install -g kickoff
 ```
 
 ```bash
-$ kickoff -s AbbottPlatform/abbott-app-template
+$ kickoff -s AbbottPlatform/abbott-app-template -d .
 ```
 
 ### What is this repository for? ###
