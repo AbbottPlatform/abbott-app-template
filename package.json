@@ -20,6 +20,6 @@
     "chatbots"
   ],
   "dependencies": {
-    "abbott-app": "git+https://{{bitbucket_user}}:{{bitbucket_token}}@bitbucket.org/viniciuspatrinhani/abbott-app.git#v1.5.5"
+    "abbott-app": "git+https://{{bitbucket_user}}:{{bitbucket_token}}@bitbucket.org/viniciuspatrinhani/abbott-app.git#v1.5.6"
   }
 }
